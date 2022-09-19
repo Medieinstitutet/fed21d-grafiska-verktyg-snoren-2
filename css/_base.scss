@@ -15,6 +15,22 @@ header{
         object-fit: cover;
     }
 
+    & .menuBtn{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        .menuLine{
+            height: 8px;
+            width: 52px;
+            background-color: $pressedcookies;
+            margin-bottom: 5px;
+        }
+        .offset{
+            margin-left: 10px;
+        }
+    }
+
     & ul{
         position:absolute;
         display: flex;
@@ -23,6 +39,7 @@ header{
         top: 0px;
         margin: 10px;
         width: 100%;
+        visibility: hidden;
     }
 
     & h1{
