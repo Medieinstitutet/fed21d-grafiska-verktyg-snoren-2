@@ -1,5 +1,7 @@
 body {
     width: 100vw;
+    position: relative;
+
 }
 
 header{
@@ -297,5 +299,52 @@ footer{
         font-size: 24px;
         color: $vit;
         text-decoration: none;
+    }
+}
+
+.cookiesContainer{
+    position: absolute;
+    border: 3px solid $cookies;
+    background-color: $vit;
+    top: 50vh;
+    left: 0px;
+    width: 350px;
+    height: fit-content;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    z-index: 998;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+    h3{
+        font-size: 48px;
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    p{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        padding: 10px;
+        margin: 0;
+    }
+
+    button{
+        background-color: $cookies;
+        color: $vit;
+        border: none;
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+        font-family: 'Permanent Marker';
     }
 }
