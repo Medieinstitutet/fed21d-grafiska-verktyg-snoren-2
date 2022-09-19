@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector('.menuBtn');
+const openMenu = document.querySelector('.openMenu');
+
+
 menuBtn.addEventListener('click', () => {
-
-    menuBtn.classList.toggle('menu-open');
-
+    openMenu.classList.toggle('hideMe');
 });

@@ -9,6 +9,10 @@ header{
     height: 756px;
     overflow: hidden;
 
+    .openMenu{
+        display: none;
+    }
+
     & img{
          height: 100%;
          width: 100%;
