@@ -51,8 +51,7 @@ main{
     border: solid 2px peru;
     display: flex;
     flex-direction: column;
-
-   
+    background-color: $primar;
 }
 
 .main_top_section{
@@ -73,4 +72,17 @@ main{
          font-style: normal;
          line-height: 50px;
      }
+}
+
+.main_bottom_section{
+
+    & p{
+        padding: 16px;
+        font-size: 16px;
+        font-family: 'Rubik';
+        font-style: normal;
+        line-height: 30px;
+        font-weight: 400;
+      
+    }
 }
