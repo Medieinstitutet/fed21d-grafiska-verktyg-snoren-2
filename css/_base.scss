@@ -1,0 +1,301 @@
+body {
+    width: 100vw;
+}
+
+header{
+    position: relative;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 667px;
+    overflow: hidden;
+
+    .openMenu{
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        background-color: #0E092ECC;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+
+        a{
+            text-decoration: none;
+            color: $vit;
+        }
+        
+    }
+
+    .hideMe{
+        border: 2px solid yellow;
+        display: none;
+    }
+
+    & img{
+         height: 100%;
+         width: 100%;
+        object-fit: cover;
+    }
+
+    & ul{
+        position:absolute;
+        display: flex;
+        background-color: $pressedcookies;
+        color: $vit;
+        top: 0px;
+        margin: 0px;
+        width: 100%;
+
+        li{
+            display: none;
+        }
+
+        & .menuBtn{
+            position: absolute;
+            z-index: 999;
+            right: 50px;
+            top: 0px;
+            padding: 10px;
+            cursor: pointer;
+            display: block;
+    
+            .menuLine{
+                height: 8px;
+                width: 52px;
+                background-color: $pressedcookies;
+                margin-bottom: 5px;
+            }
+            .offset{
+                margin-left: 10px;
+            }
+        }
+    }
+
+
+    & h1{
+        position: absolute;
+        top: 10%;
+        bottom: -40%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 85px;
+        line-height: 124px;
+
+        color: $vit;
+
+        transform: rotate(-17deg);
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primar;
+    width: 100%;
+}
+
+.main_top_section{
+    & h2{
+        padding-left: 26px;
+        padding-right: 26px;
+        font-size: 48px;
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        line-height: 50px;
+        color: $svart;
+        margin-top: 18px;
+        margin-bottom: 16px;
+     }
+ 
+     & p{
+        padding-left: 26px;
+        padding-right: 26px;
+         font-size: 24px;
+         font-family: 'Permanent Marker';
+         font-style: normal;
+         line-height: 50px;
+     }
+}
+
+.main_bottom_section{
+
+    & p{
+        padding-left: 26px;
+        padding-right: 26px;
+        font-size: 16px;
+        font-family: 'Rubik';
+        font-style: normal;
+        line-height: 30px;
+        font-weight: 400;
+      
+    }
+
+    & .styledlink{
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        font-size: 24px;
+        text-decoration: none;
+        color: $pressedcookies;
+        margin-top: 18px;
+        margin-bottom: 16px;
+        position: relative;
+
+        &::after {
+            display: block;
+              content: '';
+             width: 145px;
+             height: 10px;
+             background: $sekundar;
+             position: absolute;
+             
+             bottom: -3px;
+             left: 0;
+           }
+
+           &:hover{
+            color: $disabledknapp;
+           }
+    }
+}
+
+aside{
+    background-color: $vit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 26px;
+    padding-right: 26px;
+
+    & .card{
+        border: 2px solid $pressedknapp;
+        width: 334px;
+        margin-top: 20px;
+       
+
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        & h2{
+            font-size: 48px;
+            font-family: 'Permanent Marker';
+            font-style: normal;
+            color: $sekundar;
+            margin: 10px;
+            text-align: center;
+        }
+    }
+
+    .card:hover{
+       
+            border: 15px solid #B4ABE8;;
+        
+    }
+
+    & .aside_bottom_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h2{
+            font-size: 48px;
+            font-family: 'Permanent Marker';
+            font-style: normal;
+            color: $sekundar;
+            margin: 10px;
+            font-weight: 400;
+            line-height: 70px;
+        }
+
+        & p{
+            padding-left: 26px;
+            padding-right: 26px;
+            font-size: 14px;
+            font-family: 'Rubik';
+            font-style: normal;
+            line-height: 30px;          
+        }
+
+        & input{
+            width: 267px;
+            height: 53px;
+            border-radius: 15px;
+            border: 3px solid $sekundar;
+        }
+
+        & button{
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 12px;
+            background-color: $sekundar;
+            color: $vit;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: 'Permanent Marker';
+            font-size: 20px;
+            margin-top: 27px;
+            margin-bottom: 27px;
+
+            &:hover{
+                background-color: $pressedcookies;
+            }
+
+            &:active{
+                background-color: $pressedknapp;
+            }
+
+            &:disabled{
+                background-color: $disabledknapp;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $sekundar;
+    height: 259px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 15px;
+
+    .socialcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        & div{
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .aboutcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    & a{
+        font-family: 'Permanent Marker';
+        font-size: 24px;
+        color: $vit;
+        text-decoration: none;
+    }
+}

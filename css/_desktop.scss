@@ -1,0 +1,266 @@
+body {
+    width: 100vw;
+}
+
+header{
+    position: relative;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+
+    .openMenu{
+        display: none;
+    }
+
+    & img{
+         height: 100%;
+         width: 100%;
+        object-fit: cover;
+    }
+
+
+    & ul{
+        position:absolute;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        background-color: $pressedcookies;
+        color: $vit;
+        top: 100px;
+        right: 0px;
+        margin: 10px;
+        width: 834px;
+        height: 72px;
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        padding: 0;
+        z-index: 99;
+        visibility: visible;
+    
+        li{
+            cursor: pointer;
+            display: inline;
+        }
+
+        & .menuBtn{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: none;
+        }
+    }
+
+    & h1{
+        position: absolute;
+        top: 200px;
+        bottom: -40%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        width: 700px;
+        height: 200px;
+
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 140px;
+
+        color: $vit;
+
+        transform: rotate(-17deg);
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primar;
+    width: 100%;
+}
+
+.main_top_section{
+    & h2{
+        padding-left: 26px;
+        padding-right: 26px;
+        font-size: 48px;
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        line-height: 50px;
+        color: $svart;
+        margin-top: 18px;
+        margin-bottom: 16px;
+     }
+ 
+     & p{
+        padding-left: 26px;
+        padding-right: 26px;
+         font-size: 24px;
+         font-family: 'Permanent Marker';
+         font-style: normal;
+         line-height: 50px;
+     }
+}
+
+.main_bottom_section{
+
+    & p{
+        padding-left: 26px;
+        padding-right: 26px;
+        font-size: 16px;
+        font-family: 'Rubik';
+        font-style: normal;
+        line-height: 30px;
+        font-weight: 400;
+      
+    }
+}
+
+.toparticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    background-color: $vit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+
+    & .card{
+        border: 2px solid $pressedknapp;
+        width: 334px;
+        margin: 40px;
+       
+
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        & h2{
+            font-size: 48px;
+            font-family: 'Permanent Marker';
+            font-style: normal;
+            color: $sekundar;
+            margin: 10px;
+            text-align: center;
+        }
+    }
+
+    .card:hover{
+       
+            border: 15px solid #B4ABE8;;
+        
+    }
+
+    & .aside_bottom_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h2{
+            font-size: 48px;
+            font-family: 'Permanent Marker';
+            font-style: normal;
+            color: $sekundar;
+            margin: 10px;
+            font-weight: 400;
+            line-height: 70px;
+        }
+
+        & p{
+            padding-left: 26px;
+            padding-right: 26px;
+            font-size: 14px;
+            font-family: 'Rubik';
+            font-style: normal;
+            line-height: 30px;  
+            width: 60%;        
+        }
+
+        & input{
+            width: 267px;
+            height: 53px;
+            border-radius: 15px;
+            border: 3px solid $sekundar;
+        }
+
+        & button{
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 12px;
+            background-color: $sekundar;
+            color: $vit;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: 'Permanent Marker';
+            font-size: 20px;
+            margin-top: 27px;
+            margin-bottom: 27px;
+
+            &:hover{
+                background-color: $pressedcookies;
+            }
+
+            &:active{
+                background-color: $pressedknapp;
+            }
+
+            &:disabled{
+                background-color: $disabledknapp;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $sekundar;
+    height: 259px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding-top: 15px;
+
+    .socialcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        & div{
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .aboutcontainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 500px;
+    }
+
+    & a{
+        font-family: 'Permanent Marker';
+        font-size: 24px;
+        color: $vit;
+        text-decoration: none;
+    }
+}
