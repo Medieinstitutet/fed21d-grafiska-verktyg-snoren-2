@@ -1,0 +1,30 @@
+$primar : #FCE2A4;
+$sekundar : #736A94;
+$svart : #000000;
+$vit : #FFFFFF;
+$disabledknapp : #807C94;
+$pressedknapp : #5F5C6E;
+$cookies : #3F24E3;
+$hovercookies : #160A64;
+$pressedcookies : #0E092E;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+$permanent-marker-cursive: 'Permanent Marker', cursive;
+
+@import "normalize";
+
+@import "base";
+
+@media screen and (min-width: 834px){
+
+    @import "tablet";
+    
+}
+
+@media screen and (min-width: 1440px){
+
+    @import "desktop";
+    
+}
+

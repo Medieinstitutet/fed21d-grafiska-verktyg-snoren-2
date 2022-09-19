@@ -1,0 +1,76 @@
+body {
+
+}
+
+header{
+    border: 2px solid red;
+    position: relative;
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 667px;
+    overflow: hidden;
+
+    & img{
+         height: 100%;
+         width: 100%;
+        object-fit: cover;
+    }
+
+    & ul{
+        position:absolute;
+        display: flex;
+        background-color: $pressedcookies;
+        color: $vit;
+        top: 0px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    & h1{
+        position: absolute;
+        left: 0%;
+        right: 0px;
+        // top: 26.94%;
+        // bottom: -26.94%;
+        text-align: center;
+
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 85px;
+        line-height: 124px;
+
+        color: $vit;
+
+        transform: rotate(-17deg);
+    }
+}
+
+main{
+    padding: 10px;
+    border: solid 2px peru;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+.main_top_section{
+    & h2{
+        font-size: 48px;
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        line-height: 50px;
+        color: $svart;
+        margin-top: 18px;
+        margin-bottom: 16px;
+     }
+ 
+     & p{
+         padding: 16px;
+         font-size: 24px;
+         font-family: 'Permanent Marker';
+         font-style: normal;
+         line-height: 50px;
+     }
+}
