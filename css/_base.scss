@@ -181,11 +181,13 @@ aside{
     & .card{
         border: 2px solid $pressedknapp;
         width: 334px;
+        height: fit-content;
         margin-top: 20px;
+        margin-bottom: 10px;
        
 
         & img{
-            height: 100%;
+            // height: 100%;
             width: 100%;
             object-fit: cover;
         }
@@ -210,6 +212,7 @@ aside{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 10px;
 
         & h2{
             font-size: 48px;
